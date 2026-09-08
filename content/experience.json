@@ -1,0 +1,95 @@
+[
+  {
+    "role": "Internet Café Technical & Business Support",
+    "org": "Local internet café",
+    "period": "Age 18 — first job",
+    "highlights": [
+      "Device management, maintenance, and troubleshooting for computers and peripherals",
+      "Data entry, appointment scheduling, APK installation and software setup",
+      "Audio and video editing, general customer and technical support"
+    ]
+  },
+  {
+    "role": "Customer Service Representative",
+    "org": "BPO (seasonal account)",
+    "period": "~1 month",
+    "highlights": [
+      "Customer communication and call handling under service-level expectations"
+    ]
+  },
+  {
+    "role": "Technical Support Representative → Temporary SME",
+    "org": "Antivirus software company",
+    "period": "",
+    "highlights": [
+      "Phone and chat troubleshooting, product assistance",
+      "Peer support, escalation handling, knowledge sharing",
+      "Completed internal leadership training track"
+    ]
+  },
+  {
+    "role": "Subject Matter Expert (SME)",
+    "org": "Antivirus software company",
+    "period": "Promoted within 1 year",
+    "highlights": [
+      "Tier 1 escalation support across chat and email",
+      "Bug reporting, feature requests, alpha/beta testing, dogfooding programs",
+      "Root cause investigation and validation testing across devices",
+      "Client calls and incident status reporting",
+      "VPN outage management — first point of contact for critical incidents"
+    ]
+  },
+  {
+    "role": "SME Process Lead — VPN Software",
+    "org": "Antivirus software company",
+    "period": "Promoted after 1 more year",
+    "highlights": [
+      "Internal process design and workflow optimization for CX and team efficiency",
+      "Lean Six Sigma certified, Green Belt trained",
+      "Primary CRM administrator for Zendesk and SnapEngage",
+      "Direct collaboration with Process Improvement Managers, Account Directors, and client stakeholders"
+    ]
+  },
+  {
+    "role": "Customer Success Operations → Technical Support Department Lead",
+    "org": "FinTech startup (early team member)",
+    "period": "Pandemic era — remote",
+    "highlights": [
+      "Started in LiveChat/email support, promoted to department lead within 3 months",
+      "Built process, team structure, and workflows for a new department from scratch",
+      "Took ownership of technical support: investigations, developer collaboration, escalation management"
+    ]
+  },
+  {
+    "role": "Automation Build — Make.com",
+    "org": "Philippine webinar company",
+    "period": "",
+    "highlights": [
+      "Fully automated webinar operations: registration, reminders, attendance confirmation, certificate generation"
+    ]
+  },
+  {
+    "role": "GoHighLevel Agency Administrator",
+    "org": "Senior transition specialist coaching organization",
+    "period": "",
+    "highlights": [
+      "Client onboarding, system configuration, and training for a white-labeled GHL ecosystem",
+      "Daily office hours and Zoom coaching for the client community",
+      "Snapshot management, automation deployment, campaign and CRM operations"
+    ]
+  },
+  {
+    "role": "GoHighLevel Certified Administrator — Independent Consultant",
+    "org": "Multi-industry clients",
+    "period": "Current",
+    "highlights": [
+      "Automotive/detailing: automation and campaign management",
+      "Marketing agencies: email and internal workflow automation",
+      "AI services: Apollo lead generation, prospecting systems",
+      "Medical & surgical: automation repair, campaign optimization",
+      "Psychology & coaching: lead management, membership automation, custom dashboards",
+      "Legal: DRIP-to-GHL migration, ThriveCart integration, webhook automation, reporting, AI implementation",
+      "Real estate CRM provider: onboarding, advanced workflows, AI conversation and voice AI systems, custom browser development"
+    ]
+  }
+]

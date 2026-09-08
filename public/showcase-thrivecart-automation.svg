@@ -1,0 +1,88 @@
+<svg viewBox="0 0 820 880" width="820" height="880" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#14B8A6" />
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9CA3AF" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="880" fill="#FFFFFF" />
+
+  <!-- connecting lines -->
+  <path d="M300,84 L300,104" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M300,174 L300,254" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M460,130 Q520,130 560,128" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4 4" fill="none" marker-end="url(#arrowGray)" />
+  <path d="M300,318 L300,358" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M230,428 Q190,450 165,468" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M370,428 Q420,450 455,468" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M165,538 Q220,560 262,578" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M455,538 Q400,560 338,578" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M300,648 L300,688" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+  <path d="M460,605 Q510,605 560,608" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4 4" fill="none" marker-end="url(#arrowGray)" />
+  <path d="M300,752 L300,772" stroke="#14B8A6" stroke-width="2" fill="none" marker-end="url(#arrowTeal)" />
+
+  <!-- edge labels -->
+  <text x="330" y="216" font-size="11" font-weight="700" fill="#0F9488">Order Success</text>
+  <text x="245" y="450" font-size="11" font-weight="700" fill="#0F9488">Found</text>
+  <text x="378" y="450" font-size="11" font-weight="700" fill="#0F9488">Not found</text>
+  <text x="470" y="596" font-size="11" font-weight="700" fill="#9CA3AF">10 / 10 full</text>
+
+  <!-- 1. Trigger -->
+  <rect x="140" y="20" width="320" height="64" rx="12" fill="#111827" />
+  <text x="300" y="45" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Inbound Webhook</text>
+  <text x="300" y="65" text-anchor="middle" font-size="12" fill="#14B8A6">ThriveCart · cart.abandoned / order.success</text>
+
+  <!-- 2. Classify -->
+  <rect x="140" y="104" width="320" height="70" rx="12" fill="#E9F7F4" stroke="#14B8A6" stroke-width="1.5" />
+  <text x="300" y="132" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Classify Event</text>
+  <text x="300" y="152" text-anchor="middle" font-size="12" fill="#4B5563">Order Success · Abandoned · Other</text>
+
+  <!-- 3. Abandoned / other (dead end) -->
+  <rect x="560" y="98" width="220" height="60" rx="10" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="4 4" />
+  <text x="670" y="123" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">Abandoned / Other</text>
+  <text x="670" y="141" text-anchor="middle" font-size="11" fill="#9CA3AF">No further action</text>
+
+  <!-- 4. Extract products -->
+  <rect x="140" y="254" width="320" height="64" rx="12" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5" />
+  <text x="300" y="279" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Extract Purchased Products</text>
+  <text x="300" y="299" text-anchor="middle" font-size="12" fill="#6B7280">Parses order.charges → up to 5 items</text>
+
+  <!-- 5. Find contact -->
+  <rect x="140" y="358" width="320" height="70" rx="12" fill="#E9F7F4" stroke="#14B8A6" stroke-width="1.5" />
+  <text x="300" y="386" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Find Contact by Email</text>
+  <text x="300" y="406" text-anchor="middle" font-size="12" fill="#4B5563">Match against CRM contacts</text>
+
+  <!-- 6. Existing contact -->
+  <rect x="40" y="468" width="250" height="70" rx="12" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5" />
+  <text x="165" y="497" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">Existing Contact</text>
+  <text x="165" y="516" text-anchor="middle" font-size="12" fill="#6B7280">Tag: purchasers</text>
+
+  <!-- 7. Create contact -->
+  <rect x="330" y="468" width="250" height="70" rx="12" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5" />
+  <text x="455" y="497" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">Create New Contact</text>
+  <text x="455" y="516" text-anchor="middle" font-size="12" fill="#6B7280">Name, email + tag: purchasers</text>
+
+  <!-- 8. Merge / fill slot -->
+  <rect x="140" y="578" width="320" height="70" rx="12" fill="#FFFFFF" stroke="#14B8A6" stroke-width="2" />
+  <text x="300" y="606" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Fill Next Empty Product Slot</text>
+  <text x="300" y="626" text-anchor="middle" font-size="12" fill="#6B7280">Checks fields 1 → 10 in order</text>
+  <circle cx="440" cy="590" r="16" fill="#14B8A6" />
+  <text x="440" y="595" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">×10</text>
+
+  <!-- 9. Alert (dead end) -->
+  <rect x="560" y="578" width="220" height="70" rx="10" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="4 4" />
+  <text x="670" y="606" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">All 10 Slots Full</text>
+  <text x="670" y="625" text-anchor="middle" font-size="11" fill="#9CA3AF">Email alert sent to team</text>
+
+  <!-- 10. Log note -->
+  <rect x="140" y="688" width="320" height="64" rx="12" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5" />
+  <text x="300" y="713" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Log Purchase Note</text>
+  <text x="300" y="733" text-anchor="middle" font-size="12" fill="#6B7280">Product, price &amp; customer on contact</text>
+
+  <!-- 11. Done badge -->
+  <circle cx="300" cy="800" r="18" fill="#14B8A6" />
+  <path d="M292,800 L298,806 L310,792" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="330" y="806" font-size="13" font-weight="700" fill="#111827">Contact record updated</text>
+</svg>
