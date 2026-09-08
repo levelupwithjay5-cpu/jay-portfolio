@@ -20,6 +20,7 @@ Personal resume/portfolio site. Positioning: **Operations Architect | Customer S
 - [x] Contact channels: WhatsApp (`wa.me/639454360341`) + email button in the Contact section; site-wide contact email switched to `jay@backendoperators.com` (was a placeholder gmail)
 - [x] Footer shows "Powered by BackendOperators" linking to backendoperators.com
 - [x] Real photo added to hero (`public/jay-photo.png`)
+- [x] GitHub repo created: [github.com/levelupwithjay5-cpu/jay-portfolio](https://github.com/levelupwithjay5-cpu/jay-portfolio) (private). `assets/` is gitignored — never committed, since it holds reference-only screenshots and, in the productivity-tracker sandbox subfolder, a real Firebase admin credential.
 - [ ] Resume PDF download link
 - [ ] Deploy (Vercel/Netlify/GitHub Pages — not yet chosen)
 - [ ] Further SEO pass (sitemap, OG image, favicon replacement, Lighthouse check)
