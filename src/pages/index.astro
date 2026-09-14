@@ -172,6 +172,8 @@ const stats = [
 
 const pageTitle = `${name} — Operations Architect & CRM Automation Specialist`;
 const pageDescription = `${tagline}. ${summary}`;
+
+const withBase = (path: string) => import.meta.env.BASE_URL + path.replace(/^\//, "");
 ---
 
 <html lang="en">
@@ -188,7 +190,7 @@ const pageDescription = `${tagline}. ${summary}`;
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={pageDescription} />
 		<meta name="theme-color" content="#111827" />
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -228,7 +230,7 @@ const pageDescription = `${tagline}. ${summary}`;
 						</div>
 					</div>
 					<div class="hero-photo">
-						<img src="/jay-photo.png" alt={`Portrait of ${name}`} width="480" height="600" />
+						<img src={withBase("/jay-photo.png")} alt={`Portrait of ${name}`} width="480" height="600" />
 					</div>
 				</div>
 			</section>
@@ -292,7 +294,7 @@ const pageDescription = `${tagline}. ${summary}`;
 							<div class="carousel-track" data-track>
 								{showcaseItems.map((item) => (
 									<div class="carousel-slide">
-										<img src={item.img} alt={item.alt} loading="lazy" />
+										<img src={withBase(item.img)} alt={item.alt} loading="lazy" />
 										<div class="showcase-meta" data-meta>
 											<p class="showcase-tag">{item.tag}</p>
 											<p class="showcase-caption">{item.caption}</p>

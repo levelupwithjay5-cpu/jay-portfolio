@@ -27,6 +27,7 @@ pnpm-debug.log*
 start-dev.bat
 serve-tracker.bat
 serve-tracker-preview.bat
+serve-preview-build.bat
 
 # reference-only source material (raw screenshots, sandboxed projects with their own
 # credentials e.g. firebase-service-account.json) — not served by the site, never committed
